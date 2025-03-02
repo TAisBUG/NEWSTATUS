@@ -1,11 +1,12 @@
 {
     "display_name": "Deal Status",
     "loading_order": 20,
-    "requires": [],
+    "requires": ["jQuery"],
     "optional": [],
     "js": "index.js",
     "css": "style.css",
     "author": "TA",
-    "version": "1.0.0",
-    "homePage": "https://github.com/SillyTavern/SillyTavern"
+    "version": "1.1.0",
+    "homePage": "https://github.com/SillyTavern/SillyTavern",
+    "extension_api_version": 1
 }
