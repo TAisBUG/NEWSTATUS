@@ -1,3 +1,4 @@
+let matchedStatus = '';
 const MODULE_NAME = 'deal-status';
 
 // 等待 ST 核心加载
@@ -218,6 +219,16 @@ async function loadDealStatus() {
         }
     });
 }
+
+// 初始化插件
+$(document).ready(async () => {
+    try {
+        await loadDealStatus();
+        console.log('Deal Status plugin loaded successfully');
+    } catch (error) {
+        console.error("Deal Status plugin failed to load:", error);
+    }
+});
 
 // 导出模块名称
 export { MODULE_NAME };
